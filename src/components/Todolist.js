@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Item from "./TodoItem";
 import TodoItem from "./TodoItem";
 
 export default class Todolist extends Component {
@@ -15,7 +14,7 @@ export default class Todolist extends Component {
               title={item.title}
               handleDelete={() => handleDelete(item.id)}
               handleEdit={() => handleEdit(item.id)}
-            ></TodoItem>
+            />
           );
         })}
         <button
@@ -23,7 +22,7 @@ export default class Todolist extends Component {
           className="btn btn-danger btn-block text-uppercase mt-5"
           onClick={clearList}
         >
-          clearList
+          clear List
         </button>
       </ul>
     );
